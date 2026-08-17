@@ -2,7 +2,7 @@
 
 ## Belt 2 & 3 Submission Checklist
 
-- [ ] Live demo link (Vercel, Netlify, or similar): [Add link]
+- [ ] Live demo link (Vercel, Netlify, or similar): [https://agroshieldv3-pdp8.vercel.app](https://agroshieldv3-pdp8.vercel.app)
 - [ ] Contract deployment address: `CB5EPPBK2JYJKCUZNWI7JF5WJNGOORFEPYQLKUYUQ2YQJQPGIBXXZRAC`
 - [ ] Transaction hash for contract interaction: [Add hash]
 - [ ] Demo video link (1–2 minutes): [Add link]
