@@ -5,10 +5,11 @@
 - [ ] Live demo link (Vercel, Netlify, or similar): [Add link]
 - [ ] Contract deployment address: `CB5EPPBK2JYJKCUZNWI7JF5WJNGOORFEPYQLKUYUQ2YQJQPGIBXXZRAC`
 - [ ] Transaction hash for contract interaction: [Add hash]
+- [ ] Demo video link (1–2 minutes): [Add link]
 - [ ] Screenshot showing Mobile responsive UI: ![Mobile Responsive UI](submissions/mobileresponsive.png)
+- [ ] Screenshot showing Multiple wallet options: ![Multiple Wallets](submissions/multiplewallets.png)
 - [ ] Screenshot showing CI/CD pipeline running: ![CI/CD Pipeline](submissions/pipeline.png)
 - [ ] Screenshot showing Test output with 3+ passing tests: ![Tests Output](submissions/tests.png)
-- [ ] Demo video link (1–2 minutes): [Add link]
 
 ---
 
