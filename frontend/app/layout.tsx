@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} bg-[#0a0f1e]`}>
+    <html lang="en" className={`${inter.variable} bg-[#0a0f1e]`} suppressHydrationWarning>
       <body className="font-sans antialiased">
         <StellarWalletProvider />
         {children}

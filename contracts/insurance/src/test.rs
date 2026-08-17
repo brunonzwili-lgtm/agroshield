@@ -43,3 +43,63 @@ fn test_initialize_and_buy_policy() {
     let total = client.get_total_premiums();
     assert_eq!(total, 100_0000000);
 }
+
+#[test]
+fn test_report_rainfall_trigger() {
+    let env = Env::default();
+    env.mock_all_auths();
+
+    let contract_id = env.register(AgroShield, ());
+    let client = AgroShieldClient::new(&env, &contract_id);
+
+    let admin = Address::generate(&env);
+    let oracle = Address::generate(&env);
+    let farmer = Address::generate(&env);
+
+    client.initialize(&admin, &oracle);
+
+    let policy_id = client.buy_policy(
+        &farmer,
+        &100,
+        &1000,
+        &100,
+        &25,
+        &30,
+    );
+
+    client.report_rainfall(&policy_id, &20); // 20 < 25, should trigger payout
+
+    let policy = client.get_policy(&policy_id);
+    assert_eq!(policy.paid_out, true);
+    assert_eq!(policy.is_active, false);
+}
+
+#[test]
+fn test_report_rainfall_no_trigger() {
+    let env = Env::default();
+    env.mock_all_auths();
+
+    let contract_id = env.register(AgroShield, ());
+    let client = AgroShieldClient::new(&env, &contract_id);
+
+    let admin = Address::generate(&env);
+    let oracle = Address::generate(&env);
+    let farmer = Address::generate(&env);
+
+    client.initialize(&admin, &oracle);
+
+    let policy_id = client.buy_policy(
+        &farmer,
+        &100,
+        &1000,
+        &100,
+        &25,
+        &30,
+    );
+
+    client.report_rainfall(&policy_id, &30); // 30 > 25, no payout
+
+    let policy = client.get_policy(&policy_id);
+    assert_eq!(policy.paid_out, false);
+    assert_eq!(policy.is_active, true);
+}
