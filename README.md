@@ -1,15 +1,21 @@
 # AgroShield
 
+## Belt 2 & 3 Submission Checklist
+
+- [ ] Live demo link (Vercel, Netlify, or similar): [Add link]
+- [ ] Contract deployment address: `CB5EPPBK2JYJKCUZNWI7JF5WJNGOORFEPYQLKUYUQ2YQJQPGIBXXZRAC`
+- [ ] Transaction hash for contract interaction: [Add hash]
+- [ ] Screenshot showing Mobile responsive UI: [Add link]
+- [ ] Screenshot showing CI/CD pipeline running: [Add link]
+- [ ] Screenshot showing Test output with 3+ passing tests: [Add link]
+- [ ] Demo video link (1–2 minutes): [Add link]
+
+---
+
 **Decentralized Parametric Crop Insurance on Stellar**
 
 Affordable, automatic, and transparent crop insurance for smallholder farmers — starting with maize farmers in Makueni County, Kenya.
 
-**Founder:** Janet Kiminza
-
----
-
-### License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
