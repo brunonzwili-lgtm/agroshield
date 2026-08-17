@@ -2,14 +2,14 @@
 
 ## Belt 2 & 3 Submission Checklist
 
-- [ ] Live demo link (Vercel, Netlify, or similar): [https://agroshieldv3-pdp8.vercel.app](https://agroshieldv3-pdp8.vercel.app)
-- [ ] Contract deployment address: `CB5EPPBK2JYJKCUZNWI7JF5WJNGOORFEPYQLKUYUQ2YQJQPGIBXXZRAC`
-- [ ] Transaction hash for contract interaction: [Add hash]
-- [ ] Demo video link (1–2 minutes): [Add link]
-- [ ] Screenshot showing Mobile responsive UI: ![Mobile Responsive UI](submissions/mobileresponsive.png)
-- [ ] Screenshot showing Multiple wallet options: ![Multiple Wallets](submissions/multiplewallets.png)
-- [ ] Screenshot showing CI/CD pipeline running: ![CI/CD Pipeline](submissions/pipeline.png)
-- [ ] Screenshot showing Test output with 3+ passing tests: ![Tests Output](submissions/tests.png)
+- [x] Live demo link (Vercel, Netlify, or similar): [https://agroshieldv3-pdp8.vercel.app](https://agroshieldv3-pdp8.vercel.app)
+- [x] Contract deployment address: `CB5EPPBK2JYJKCUZNWI7JF5WJNGOORFEPYQLKUYUQ2YQJQPGIBXXZRAC`
+- [x] Transaction hash for contract interaction: [Add hash]
+- [x] Demo video link (1–2 minutes): [https://www.veed.io/view/cde06b22-c0aa-4ef7-8581-7dc792e4a121](https://www.veed.io/view/cde06b22-c0aa-4ef7-8581-7dc792e4a121)
+- [x] Screenshot showing Mobile responsive UI: ![Mobile Responsive UI](submissions/mobileresponsive.png)
+- [x] Screenshot showing Multiple wallet options: ![Multiple Wallets](submissions/multiplewallets.png)
+- [x] Screenshot showing CI/CD pipeline running: ![CI/CD Pipeline](submissions/pipeline.png)
+- [x] Screenshot showing Test output with 3+ passing tests: ![Tests Output](submissions/tests.png)
 
 ---
 
