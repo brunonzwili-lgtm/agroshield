@@ -2,10 +2,10 @@
 
 ## Belt 2 & 3 Submission Checklist
 
-- [x] Live demo link (Vercel, Netlify, or similar): [https://agroshieldv3-pdp8.vercel.app](https://agroshieldv3-pdp8.vercel.app)
+- [x] Live demo link: [https://agroshieldv3-pdp8.vercel.app](https://agroshieldv3-pdp8.vercel.app)
 - [x] Contract deployment address: `CB5EPPBK2JYJKCUZNWI7JF5WJNGOORFEPYQLKUYUQ2YQJQPGIBXXZRAC`
 - [x] Transaction hash for contract interaction: [f4957edac32b4d0d7b0e967aaed0420628dedd2c3fc0ac432eee003996fc1a23](https://stellar.expert/explorer/testnet/tx/f4957edac32b4d0d7b0e967aaed0420628dedd2c3fc0ac432eee003996fc1a23)
-- [x] Demo video link (1–2 minutes): [https://www.veed.io/view/cde06b22-c0aa-4ef7-8581-7dc792e4a121](https://www.veed.io/view/cde06b22-c0aa-4ef7-8581-7dc792e4a121)
+- [x] Demo video link: [https://www.veed.io/view/cde06b22-c0aa-4ef7-8581-7dc792e4a121](https://www.veed.io/view/cde06b22-c0aa-4ef7-8581-7dc792e4a121)
 - [x] Screenshot showing Mobile responsive UI: ![Mobile Responsive UI](submissions/mobileresponsive.png)
 - [x] Screenshot showing Multiple wallet options: ![Multiple Wallets](submissions/multiplewallets.png)
 - [x] Screenshot showing CI/CD pipeline running: ![CI/CD Pipeline](submissions/pipeline.png)
@@ -127,10 +127,23 @@ agroshield/
 ### Roadmap
 - [x] Core contract + Testnet deployment
 - [x] Multi-wallet + Basic UI
-- [ ] Full Testnet product (frontend + contract connected)
-- [ ] Security audit + Mainnet preparation
+- [x] Full Testnet product (frontend + contract connected)
+- [x] Security audit + Mainnet preparation
 - [ ] **Mainnet Launch** + Pilot in Makueni County
 - [ ] Scale across Kenya and East Africa
+
+---
+
+### Evidence of Contract Integration
+The frontend is fully integrated with the Soroban smart contract via `@stellar/stellar-sdk`. 
+
+**Key Integration Files:**
+- `frontend/lib/agroshield.ts`: Contains the `buyPolicy` function which invokes `buy_policy` on the contract.
+
+**Implemented Contract Functions:**
+- `buy_policy`: Fully callable from the frontend UI (`BuyCoverageButton.tsx`).
+- `report_rainfall`: Available for oracle interaction.
+- `get_policy`: Used to fetch and display live policy state in the dashboard.
 
 #### 1. Clone the repo
 ```bash
